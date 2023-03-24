@@ -101,3 +101,94 @@ p {
     width: 95vw;
   }
 }
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+}
+.card {
+  width: 18rem;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.heading {
+  font-weight: 800;
+  text-align: center;
+}
+.current-balance {
+  width: 60%;
+  height: 2.5rem;
+  /* background-color: red; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.trans {
+  width: 90%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid #ffff;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.history {
+  margin-top: 0.5rem;
+  width: 90%;
+  height: auto;
+  /* background-color: red; */
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.new-transaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transaction-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+  padding: 1rem;
+  margin: 1rem;
+}
+input {
+  width: 90%;
+  cursor: pointer;
+}
+.transaction-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+label {
+  margin: 0.5rem;
+}
+.button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #1d3557;
+  border-color: #1d3557;
+  border-radius: 5px;
+  color: #ffff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
