@@ -192,3 +192,13 @@ label {
   font-size: 0.8rem;
   cursor: pointer;
 }
+.history-list {
+  margin-left: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  /* background-color: red; */
+  width: 80%;
+}
