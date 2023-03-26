@@ -117,12 +117,13 @@ body {
 }
 .card {
   width: 18rem;
-  background-color: #e5e5e5;
+  background-color: #7a9aa0;
   border-color: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  user-select: none;
 }
 .heading {
   font-weight: 800;
@@ -155,7 +156,6 @@ small {
   margin-top: 0.5rem;
   width: 90%;
   height: 12rem;
-  /* background-color: red; */
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
@@ -169,13 +169,16 @@ small {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
   padding: 1rem;
   margin: 0.5rem;
 }
+
 input {
   width: 90%;
   cursor: pointer;
+  padding: 0.15rem;
+  font-weight: 700;
+  
 }
 .transaction-text {
   font-size: 1rem;
@@ -219,7 +222,7 @@ label {
 }
 .list-of-history li {
   background-color: #ffff;
-  color: #3333;
+  color: #ffff
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   padding: 2px;
@@ -227,6 +230,7 @@ label {
   display: flex;
   justify-content: space-between;
   font-weight: 600;
+  border-radius: 5px;
   cursor: pointer;
   position: relative;
 }
