@@ -1,7 +1,7 @@
 /* select a font */
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
 *,
 *::after,
 *::before {
@@ -101,6 +101,12 @@ p {
     width: 95vw;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -122,36 +128,33 @@ body {
   font-weight: 800;
   text-align: center;
 }
-.current-balance {
-  width: 60%;
-  height: 2.5rem;
-  /* background-color: red; */
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+small {
   font-size: 1rem;
+}
+.current-balance {
   font-weight: 800;
 }
 .trans {
-  width: 80%;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #ffff;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 2px solid #ffff;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 800;
+  padding: 5px;
+  gap: 1rem;
+}
+.trans div {
+  text-align: center;
+  font-weight: 900;
+  padding: 20px;
+  font-size: 18px;
+}
+.credit {
+  color: #1dd1a1;
+}
+.debit {
+  color: #ee5253;
 }
 .history {
   margin-top: 0.5rem;
   width: 90%;
-  height: auto;
+  height: 12rem;
   /* background-color: red; */
   text-align: center;
   font-size: 1rem;
@@ -168,7 +171,7 @@ body {
   align-items: center;
   /* background-color: red; */
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 input {
   width: 90%;
@@ -201,4 +204,64 @@ label {
   padding: 0.5rem;
   /* background-color: red; */
   width: 80%;
+}
+.history {
+  overflow-y: scroll;
+}
+.history h4 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 5px;
+}
+.list-of-history {
+  list-style-type: none;
+}
+.list-of-history li {
+  background-color: #ffff;
+  color: #3333;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 2px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+.list-of-history li.expense {
+  border-right: 5px solid #ee5253;
+}
+.list-of-history li.income {
+  border-right: 5px solid #1dd1a1;
+}
+.btn-delete {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  width: 18px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: 600;
+  color: #ffff;
+  background-color: #e74c3c;
+  border: none;
+  font-size: 10px;
+  line-height: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+.list-of-history li:hover .btn-delete {
+  opacity: 1;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2e86de;
+  border-radius: 8px;
 }
